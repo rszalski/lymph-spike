@@ -12,3 +12,5 @@ interfaces:
     class: echo:Echo
   listen:
     class: echo:Listen
+  web:
+    class: web:Web
