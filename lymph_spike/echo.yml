@@ -1,0 +1,12 @@
+container:
+  registry:
+    class: lymph.discovery.zookeeper:ZookeeperServiceRegistry
+    zkclient:
+      class: kazoo.client:KazooClient
+
+  events:
+    class: lymph.events.kombu:KombuEventSystem
+
+interfaces:
+  echo:
+    class: echo:Echo
