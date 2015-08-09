@@ -10,3 +10,5 @@ container:
 interfaces:
   echo:
     class: echo:Echo
+  listen:
+    class: echo:Listen

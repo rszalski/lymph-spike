@@ -12,6 +12,8 @@ class Echo(lymph.Interface):
         self.emit('greeted', {'result': 'Said hi!'})
         return 'Hi, {}!'.format(name)
 
+
+class Listen(lymph.Interface):
     @lymph.event('greeted')
     def on_greeted(self, event):
         print('Someone {}!'.format(event['result']))
